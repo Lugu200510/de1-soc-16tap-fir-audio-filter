@@ -1,0 +1,31 @@
+# Quartus 自动生成文件和目录
+/db/
+/incremental_db/
+/output_files/
+.qsys_edit/
+.qsys_edit/*
+*.qws
+*.smsg
+*.summary
+*.rpt
+*.done
+*.jdi
+*.sof
+*.pof
+*.cdf
+*.qdf
+
+# ModelSim / Questa 仿真生成文件
+/work/
+transcript
+vsim.wlf
+*.wlf
+*.vcd
+*.log
+
+# 编辑器和系统临时文件
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*~
