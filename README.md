@@ -110,6 +110,14 @@ waiting
 - DE1-SoC
 - Cyclone V FPGA
 
+<p align="center">
+  <img src="./images/de1-soc.jpeg" alt="DE1-SoC Development Board" width="550">
+</p>
+
+<p align="center">
+  <em>DE1-SoC Development Board</em>
+</p>
+
 ## 使用说明
 
 1. 将 `fir.sv` 和 `D1.sv` 加入 Quartus 工程。
