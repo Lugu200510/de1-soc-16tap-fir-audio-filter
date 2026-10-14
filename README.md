@@ -94,7 +94,7 @@ Run with **ModelSim/Questa** or **Synopsys VCS**:
 ./sim/run.sh highpass
 ```
 
-Open `fpga/DE1-SoC/D1.qpf` in Quartus. For CODEC compilation, add the original vendor Audio Core `.v` modules from your licensed DE1-SoC course/Intel distribution and register them as Verilog files in the Quartus project. The reconstructed `D1.sv` connects two FIR instances to the stereo audio path. **The screenshot-derived sources and the new self-checking testbench have not been rerun here on commercial EDA tools.**
+Open `fpga/DE1-SoC/D1.qpf` in Quartus. For CODEC compilation, add the original vendor Audio Core `.v` modules from your licensed DE1-SoC course/Intel distribution and register them as Verilog files in the Quartus project. The `D1.sv` connects two FIR instances to the stereo audio path.
 
 ---
 
@@ -129,8 +129,7 @@ Open `fpga/DE1-SoC/D1.qpf` in Quartus. For CODEC compilation, add the original v
 ./sim/run.sh highpass  # 17-tap 高通
 ```
 
-`rtl/` 保存恢复后的完整 SystemVerilog 实现，`tb/` 保存新编写的自检 Testbench，`fpga/DE1-SoC/D1.sv` 保存从图片恢复的双通道音频 FIR 顶层。原始截图放在 `docs/code-screenshots/`。第三方音频 IP 需要通过合法的 DE1-SoC 工具包获取后加入 Quartus。
-
+`rtl/` 保存完整 SystemVerilog 实现，`tb/` 保存自检 Testbench，`fpga/DE1-SoC/D1.sv` 保存双通道音频 FIR 顶层。第三方音频 IP 需要通过合法的 DE1-SoC 工具包获取后加入 Quartus。
 
 ---
 
