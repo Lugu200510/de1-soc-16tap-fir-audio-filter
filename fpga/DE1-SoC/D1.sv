@@ -1,4 +1,3 @@
-// Reconstructed from D1(1-3).png: stereo FIR/audio CODEC integration.
 module D1 (
     input logic CLOCK_50, CLOCK2_50,
     input logic [0:0] KEY,
