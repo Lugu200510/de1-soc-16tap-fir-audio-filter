@@ -96,8 +96,6 @@ Run with **ModelSim/Questa** or **Synopsys VCS**:
 
 Open `fpga/DE1-SoC/D1.qpf` in Quartus. For CODEC compilation, add the original vendor Audio Core `.v` modules from your licensed DE1-SoC course/Intel distribution and register them as Verilog files in the Quartus project. The reconstructed `D1.sv` connects two FIR instances to the stereo audio path. **The screenshot-derived sources and the new self-checking testbench have not been rerun here on commercial EDA tools.**
 
-**Reconstruction note:** Editable RTL was recovered from user-provided code screenshots; The separately archived original materials contain an incomplete FIR template and passthrough `D1.sv`. The screenshot text and reconstructed files can be compared in [code screenshots](docs/code-screenshots/).
-
 ---
 
 ## 中文
@@ -133,7 +131,6 @@ Open `fpga/DE1-SoC/D1.qpf` in Quartus. For CODEC compilation, add the original v
 
 `rtl/` 保存恢复后的完整 SystemVerilog 实现，`tb/` 保存新编写的自检 Testbench，`fpga/DE1-SoC/D1.sv` 保存从图片恢复的双通道音频 FIR 顶层。原始截图放在 `docs/code-screenshots/`。第三方音频 IP 需要通过合法的 DE1-SoC 工具包获取后加入 Quartus。
 
-> **验证范围：** 已上传的结果是原始实验记录，不能直接视作本次重建源码已重新通过 ModelSim、Quartus 或板级测试。动画仅用于展示顺序 MAC 和系数频率响应。
 
 ---
 
