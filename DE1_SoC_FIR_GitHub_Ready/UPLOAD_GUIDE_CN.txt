@@ -1,0 +1,4 @@
+解压后，将 README.md、rtl、tb、sim、fpga、assets、docs、tools、LICENSES_AND_PROVENANCE.md 上传到 GitHub 仓库根目录。
+注意：请先核实第三方 Altera 音频模块的再分发许可。公开上传包不附带其 .v 文件；使用原始合法课程/官方工程包在本机加入这些依赖。
+D1.sv 是从截图恢复的 FIR 音频顶层；docs/original/D1_passthrough_original.sv 是原始直通模板，不是 FIR 集成版。
+RTL 仿真依赖 ModelSim/Questa/VCS；本次环境未运行这些工具，原始图片只反映先前的实验记录。
