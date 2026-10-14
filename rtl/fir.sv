@@ -1,4 +1,3 @@
-// Reconstructed from the supplied FIR(1-3).png code screenshots.
 // 16 taps, signed 16-bit samples, Q0.15 coefficients, sequential MAC.
 module fir (
     input  logic signed [15:0] in,
