@@ -1,4 +1,3 @@
-// Reconstructed from 高通1-3.png. Separate 17-tap high-pass variant.
 module fir #(
     parameter int W = 16,
     parameter int TAPS = 17,
