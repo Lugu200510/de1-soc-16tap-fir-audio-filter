@@ -1,4 +1,3 @@
-// Reconstructed from 参数化1-3.png. Compile separately from fir.sv.
 module fir #(
     parameter int W = 16,
     parameter int TAPS = 16,
