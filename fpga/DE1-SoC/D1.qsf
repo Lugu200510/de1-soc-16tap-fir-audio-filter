@@ -1,0 +1,18 @@
+# DE1-SoC / Cyclone V audio interface; additional cores supplied separately.
+set_global_assignment -name FAMILY "Cyclone V"
+set_global_assignment -name DEVICE 5CSEMA5F31C6
+set_global_assignment -name TOP_LEVEL_ENTITY D1
+set_global_assignment -name SYSTEMVERILOG_FILE D1.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ../../rtl/fir.sv
+
+set_location_assignment PIN_AF14 -to CLOCK_50
+set_location_assignment PIN_AA16 -to CLOCK2_50
+set_location_assignment PIN_AA14 -to KEY[0]
+set_location_assignment PIN_J12 -to FPGA_I2C_SCLK
+set_location_assignment PIN_K12 -to FPGA_I2C_SDAT
+set_location_assignment PIN_G7 -to AUD_XCK
+set_location_assignment PIN_H8 -to AUD_DACLRCK
+set_location_assignment PIN_K8 -to AUD_ADCLRCK
+set_location_assignment PIN_H7 -to AUD_BCLK
+set_location_assignment PIN_K7 -to AUD_ADCDAT
+set_location_assignment PIN_J7 -to AUD_DACDAT
