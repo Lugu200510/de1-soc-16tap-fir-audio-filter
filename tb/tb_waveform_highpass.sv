@@ -1,5 +1,4 @@
 `timescale 1ns/100ps
-// Waveform stimulus recreated from the original ModelSim testbench screenshots.
 module test_fir;
     localparam int W_TB = 16, TAPS_TB = 17;
     localparam logic signed [W_TB-1:0] COEFFS_TB [0:TAPS_TB-1] = '{16'sd0, -16'sd66, -16'sd264, -16'sd701, -16'sd1408, -16'sd2300, -16'sd3191, -16'sd3852, 16'sd28672, -16'sd3852, -16'sd3191, -16'sd2300, -16'sd1408, -16'sd701, -16'sd264, -16'sd66, 16'sd0};
